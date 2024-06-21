@@ -44,4 +44,8 @@ const IssuePage = async () => {
   );
 };
 
+//to disable cache, we can:
+export const dynamic = "force-dynamic";
+// export const validate = 0;
+
 export default IssuePage;
