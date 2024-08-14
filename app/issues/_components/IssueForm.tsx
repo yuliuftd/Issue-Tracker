@@ -11,7 +11,7 @@ import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import SimpleMDE from "react-simplemde-editor";
 import { z } from "zod";
-import { ErrorMessage, Spinner } from "../../component";
+import { ErrorMessage, Spinner } from "../../components";
 
 type IssueFormData = z.infer<typeof issueSchema>;
 
