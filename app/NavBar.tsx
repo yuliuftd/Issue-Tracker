@@ -90,7 +90,7 @@ const AuthStatus = () => {
               <DropdownMenu.Label>{session.user!.email}</DropdownMenu.Label>
             </Text>
             <DropdownMenu.Item>
-              <Link className="nav-link" href="api/auth/signout">
+              <Link className="nav-link" href="/api/auth/signout">
                 Log out
               </Link>
             </DropdownMenu.Item>
@@ -103,7 +103,7 @@ const AuthStatus = () => {
     return (
       <Box>
         {status === "unauthenticated" && (
-          <Link className="nav-link" href="api/auth/signin">
+          <Link className="nav-link" href="/api/auth/signin">
             Sign In
           </Link>
         )}
