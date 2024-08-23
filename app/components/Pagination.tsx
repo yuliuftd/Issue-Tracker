@@ -26,7 +26,6 @@ const Pagination = ({ itemCount, pageSize, currentPage }: Props) => {
     params.set("page", page.toString());
     router.push(`?${params.toString()}`);
   };
-  console.log(itemCount, pageCount, currentPage);
 
   return (
     <Flex align={"center"} gap={"2"}>
