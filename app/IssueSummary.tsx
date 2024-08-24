@@ -32,7 +32,7 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
       status: "CLOSED",
     },
   ];
-  const issuse = prisma.issue.findMany({});
+
   return (
     <Flex gap={"5"}>
       {containers.map((x) => (
