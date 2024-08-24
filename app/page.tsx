@@ -1,6 +1,5 @@
-import { Button } from "@radix-ui/themes";
-import Link from "next/link";
+import LatestIssues from "./LatestIssues";
 
 export default function Home() {
-  return <div>Home Page</div>;
+  return <LatestIssues />;
 }
