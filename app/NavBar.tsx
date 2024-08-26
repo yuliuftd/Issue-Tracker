@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { AiFillBug } from "react-icons/ai";
 import classNames from "classnames";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import {
   Avatar,
   Box,
@@ -90,9 +90,14 @@ const AuthStatus = () => {
               <DropdownMenu.Label>{session.user!.email}</DropdownMenu.Label>
             </Text>
             <DropdownMenu.Item>
-              <Link className="nav-link" href="/api/auth/signout">
+              <button
+                className="nav-link w-full text-left"
+                onClick={() => {
+                  signOut({ callbackUrl: "/" });
+                }}
+              >
                 Log out
-              </Link>
+              </button>
             </DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Root>
